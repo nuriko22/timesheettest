@@ -23,25 +23,25 @@ day_.style.cssText = "margin: 30px; font-size: 70px; text-align: center;";
 for (let i = 0; i < 9; i++){
     var les = document.getElementById(numLesson[i]);
     les.innerHTML = lessonsAndTime[_day_][0][i];
-    les.style.cssText = "font-size: 60px; text-align: center;";
+    les.style.cssText = "font-size: 55px; text-align: center;";
 
     var time = document.getElementById(timeLesson[i]);
     time.innerHTML = lessonsAndTime[_day_][1][i];
-    time.style.cssText = "font-size: 60px; text-align: center;";
+    time.style.cssText = "font-size: 55px; text-align: center;";
 }
 
 function button(a){
     var day = document.getElementById('Day');
     day.innerHTML = days[a];
-    day.style.cssText = "margin: 30px; font-size: 70px; text-align: center;";
+    day.style.cssText = "margin: 55px; font-size: 70px; text-align: center;";
 
     for (let i = 0; i < 9; i++){
         var les = document.getElementById(numLesson[i]);
         les.innerHTML = lessonsAndTime[a][0][i];
-        les.style.cssText = "font-size: 60px; text-align: center;";
+        les.style.cssText = "font-size: 55px; text-align: center;";
     
         var time = document.getElementById(timeLesson[i]);
         time.innerHTML = lessonsAndTime[a][1][i];
-        time.style.cssText = "font-size: 60px; text-align: center;";
+        time.style.cssText = "font-size: 55px; text-align: center;";
 }
 }
