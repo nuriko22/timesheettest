@@ -18,7 +18,7 @@ var _day_ = now.getDay();
 _day_ = _day_ == 0 || _day_ > 5 ? 0 : _day_ - 1;
 var day_ = document.getElementById('Day');
 day_.innerHTML = days[_day_];
-day_.style.cssText = "margin: 30px; font-size: 70px; text-align: center;";
+day_.style.cssText = "margin: 55px; font-size: 70px; text-align: center;";
 
 for (let i = 0; i < 9; i++){
     var les = document.getElementById(numLesson[i]);
