@@ -19,7 +19,7 @@ table {
 }
 
 .butt:hover { /* Кнопки при наведении курсора */
-    background: #c6c6c6;
+    background: #e6e6e6;
 }
 
 .butt:active { /* Кнопки при нажатии */
