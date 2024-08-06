@@ -17,14 +17,10 @@ var now = new Date();
 str = now.toLocaleString().split(' ');
 time = str[1].split(':')[0];
 ampm = str[2];
-console.log(str, time, ampm);
 var _day_ = now.getDay();
-console.log(_day_);
-//_day_ = ampm == "PM" & time >= 5 ? _day_ + 1 : _day_;
-_day_ = time >= 17 ? _day_ + 1 : _day_;
-console.log(_day_);
+if (ampm) {_day_ = ampm == "PM" & time >= 5 ? _day_ + 1 : _day_;}
+else {_day_ = time >= 17 ? _day_ + 1 : _day_;}
 _day_ = _day_ == 0 || _day_ > 5 ? 0 : _day_ - 1;
-console.log(_day_);
 var day_ = document.getElementById('Day');
 day_.innerHTML = days[_day_];
 day_.style.cssText = "margin: 30px; font-size: 70px; text-align: center;";
